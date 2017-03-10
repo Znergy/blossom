@@ -1,45 +1,58 @@
 body {
   color: #333;
-  margin: 0;
-  height: 100%;
-  padding: 0;
 }
 
-.main-container {
-  height: 100vh;
-}
-
-.full-height {
-  height: 100%;
-}
-
+/** Header **/
 .header {
   background-color: #333;
-  color: #fff;
-}
-.bg-silver {
-  background-color: #ccc;
+  border-bottom: #ccc;
 }
 
-.logo h2 {
-  text-align: center;
-  font-size: 50px;
-  font-family: cursive;
+#siteName {
+  color: #ccc;
+  font-style: italic;
+  font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+  padding-top: 20px;
+  padding-top: 25px;
 }
+
+/*** Main Nav ***/
 
 .mainNav {
   list-style-type: none;
   text-align: center;
   padding-top: 55px;
+  padding-right: 10px;
+}
+
+.mainNav a {
+  color: #ccc;
+  font-size: 20px;
+}
+
+.mainNav a:hover {
+  color: hsl(330, 23%, 68%);
+}
+
+.mainNav a:active {
+  text-decoration: none;
+  color: hsl(330, 23%, 68%);
+}
+
+.mainNav > li{
+  padding-right: 15px;
 }
 
 .mainNav li {
   display: inline;
 }
 
+/*** Side Nav ***/
 .side-nav1 {
-  background-color: coral;
-  margin-bottom: 0;
+  background-color: #333;
+  color: #ccc;
+  border-top: 1px solid #ccc;
+  height: 100vh;
 }
 
 .side-nav1 h2 {
@@ -52,23 +65,158 @@ ul.sideNav {
   list-style-type: none;
 }
 
+ul.sideNav a {
+  color: #ccc;
+}
+
+ul.sideNav a:hover {
+  color: hsl(330, 23%, 68%);
+  text-decoration: none;
+}
+
+/* Text that changes from site1 -> site2 (vice versa) */
+#active-dropdown-text {
+  font-size: 20px;
+}
+
+/** Logo **/
+.logo h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+.logo a {
+  color: #ccc;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: floralwhite;
+}
+
+/*** divs to hide ***/
+.account, .site1, .site2, .domains, .header-alert, .paragraph-alert, .background-alert, .theme-alert {
+  display: none;
+}
+
+/*** Alert ***/
+.alert {
+  margin-top: 15px;
+}
+
+/*** Dropdown ***/
 .dropdown {
   width: 100%;
 }
 
-.btn {
+.dropdown-btn {
   width: 100%;
 }
 
+.caret {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #333;
+}
 
-.sideNav a {
+ul.dropdown-menu {
+  width: 100%;
+}
+
+/*** Edit Div ***/
+
+.edit h1 {
+  border: 1px solid #333;
+  background-color: whitesmoke;
+}
+
+.edit-button {
+  text-align: center;
+}
+
+.edit .input-group {
+  padding: 5px;
+}
+
+.edit h2 {
+  text-align: center;
+}
+
+.edit h1 {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+
+/*** Panel Styles ***/
+
+.panel-default > .panel-heading {
+  background-color: #333;
+  color: #ccc;
+}
+
+
+.btn-default {
   color: #333;
 }
 
-.sideNav a:hover {
-  
+.save-buttons {
+  margin-top: 10px;
 }
 
-.account, .site2 {
-  display: none;
+.change-pass-btn {
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
 }
+
+.change-email-btn {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.iconStyle {
+  padding-right: 5px;
+}
+
+.panelH3 {
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: -5px;
+}
+
+/*** Account ***/
+
+.account {
+  margin-top: 25px;
+}
+
+.account a {
+  color: #333;
+}
+
+.account a:hover {
+  text-decoration: none;
+}
+
+.account h2 {
+  text-align: center;
+}
+
+/*** Domains ***/
+.domains h2 {
+  text-align: center;
+}
+
+.domains th a {
+  color: #333;
+}
+
+
+
+
+
+

@@ -13,10 +13,10 @@ h1 {
   margin-right: 20px;
 }
 
+
 p {
   font-size: 18px;
 }
-
 
 .carousel-control.right{ opacity:.1 !important;color:grey;
 margin-right: 0px;}
@@ -36,7 +36,7 @@ a {
 }
 
 body {
-  background-image: url(img/cloud-circuit.jpg);
+  background-image: url(../../img/cloud-circuit.jpg);
   background-size: cover;
   background-repeat: no-repeat
 }

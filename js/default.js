@@ -5,18 +5,6 @@
 * You will then link default.js and example.js into your html
 */
 
-//////////////////////////
-/*** Build.js Section ***/
-//////////////////////////
-
-$('.client-question-form').submit(function(event) {
-  event.preventDefault();
-  // code when the submit occurs goes here..
-  
-  window.location.href='admin.html';
-
-});
-
 
 //////////////////////////
 /*** Admin.js Section ***/
@@ -24,43 +12,51 @@ $('.client-question-form').submit(function(event) {
 
 $("#accountNav").click(function() {
   hideAll();
-  $(".account").show();
+  showAccountPanels();
 });
 
-$("#previewNav").click(function() {
+$("#demo1").click(function() {
+  $("#active-dropdown-text").text("Demo 1");
+});
+
+$("#demo2").click(function() {
+  $("#active-dropdown-text").text("Demo 2");
+});
+
+$("#changePasswordBtn").click(function() {
+  alert("Password has been changed");
+  alert("Or has it?");
+});
+
+$("#changeEmailBtn").click(function() {
+  alert("Email has been changed");
+  alert("For real though..");
+});
+
+$("#editNav").click(function() {
   hideAll();
-  var value = $("#active-dropdown-text").text();
-  value = value.toLowerCase();
-  console.log(value);
-  if (value === "site 1") {
-    $(".site1").show();
-  } else if (value === "site 2") {
-    $(".site2").show();
-  }
+  $(".edit").show();
 });
 
-$("#site2").click(function() {
-  $("#active-dropdown-text").text("Site 2");
-  hideAll();
-  $(".site2").show();
+/*** dashboard panels **
+$("#headerSave").click(function(e) {
+  e.preventDefault();
+  $(".header-alert").show();
 });
 
-$("#site1").click(function() {
-  $("#active-dropdown-text").text("Site 1");
-  hideAll();
-  $(".site1").show();
+$("#paragraphSave").click(function(e) {
+  e.preventDefault();
+  $(".paragraph-alert").show();
 });
 
-function hideAll() {
-  var arrayOfIds = ["site1", "site2", "account"];
-  
-  arrayOfIds.forEach(function(name) {
-    var className = ("." + name);
-    $(className).hide();
-  });
-}
+$("#backgroundSave").click(function(e) {
+  e.preventDefault();
+  $(".background-alert").show();
+});
 
+$("#themeSave").click(function(e) {
+  e.preventDefault();
+  $(".theme-alert").show();
+});
 
-
-
-
+*/
